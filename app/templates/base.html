@@ -1,0 +1,20 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - microblog</title>
+        {% else %}
+        <title>Flask-Crawler</title>
+        {% endif %}
+    </head>
+    <body>
+         <div>
+            Flask-Crawler:
+             <a href="/index">Home</a>
+             <a href="/value_search">Value Search</a>
+             <a href="/file_display">File Display</a>
+             <a href="/search_directory">Search Directory</a>
+        </div>
+        <hr>
+            {% block content %}{% endblock %}
+    </body>
+</html>
